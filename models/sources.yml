@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: weather
+    database: data-management-2-480516
+    schema: weather
+    tables:
+      - name: gsmap_rain_realtime
+
+  - name: crops
+    database: data-management-2-480516
+    schema: crops
+    tables:
+      - name: raw_crop_yield
