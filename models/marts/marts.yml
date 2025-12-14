@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: fct_aqi_crops
+    description: "Joined real-time AQI with static crop yield data"
+    columns:
+      - name: state
+        tests:
+          - not_null
+      - name: ts_utc
+        tests:
+          - not_null

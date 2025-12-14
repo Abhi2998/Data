@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: stg_aqi
+    description: "Cleaned real-time air quality data"
+    columns:
+      - name: state
+        tests:
+          - not_null
+      - name: ts_utc
+        tests:
+          - not_null
+
+  - name: stg_crops
+    description: "Cleaned static crop yield data"
+    columns:
+      - name: state
+        tests:
+          - not_null
+      - name: crop_year
+        tests:
+          - not_null
